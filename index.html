@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+
+    <div id="general">
+        <div id="drop-area">
+            <form class=my-form>
+                <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)" />
+                <label class="button" id="button-id" for="fileElem">Loading model ...</label>
+            </form>
+        </div>
+
+
+        <div id="gallery"></div>
+        <!-- <figure id="gallery"></figure> -->
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/ml5@0.3.1/dist/ml5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
